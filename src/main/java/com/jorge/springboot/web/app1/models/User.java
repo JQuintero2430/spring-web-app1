@@ -3,14 +3,15 @@ package com.jorge.springboot.web.app1.models;
 public class User {
     private String name;
     private String surname;
+    private String email;
 
     public User() {
     }
 
-    public User(String name, String surname) {
-        super();
+    public User(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
+        this.email = email;
     }
 
     public void setName(String name) {
@@ -27,5 +28,13 @@ public class User {
 
     public String getSurname() {
         return surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
