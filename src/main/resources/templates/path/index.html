@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xlmns:th="www.thymeleaf.org" xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar valores por parámetro</title>
+</head>
+<body>
+<h1>Enviar valores por parámetro</h1>
+<ul>
+    <li><a th:href="@{/path/text/} + ${'Hello gente hermosa'}">Saludo</a></li>
+    <li><a th:href="@{/path/text/} + ${'Tengo excelentes noticias que contarte'}">Noticia</a></li>
+    <li><a th:href="@{/path/text/} + ${'el número ganador es el número '} + '/' + ${'24'}">Noticia</a></li>
+</ul>
+</body>
+</html>
